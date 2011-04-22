@@ -8,7 +8,7 @@ gem 'faker'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql'
+gem 'mysql2'
 group :development do
     gem 'rspec-rails'
     gem 'annotate-models'

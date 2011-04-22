@@ -1,0 +1,50 @@
+<h2>小百合每周荐股擂台第5期（4.22-4.29）</h2>
+<!--<div class="past"><a href="../past?period=4">上期回顾</a></div><br /> -->
+  <table border="0" align="center" cellspacing="1" id="dd">
+    <colgroup>
+        <col class="name" />
+	<col />
+	<col />
+	<col class="reason" />
+	<col />
+	<col />
+	<col />
+	<col />
+	<col />
+    </colgroup>
+    <thead>
+      <tr>
+        <th>百合ID</th>
+        <th>股票代码</th>
+        <th>股票名称</th>
+        <th>推荐理由</th>
+        <th>推荐价</th>
+        <th>现价</th>
+        <th>今日涨幅</th>
+        <th>总涨幅</th>
+      </tr>
+    </thead>
+
+    <tbody class="tb">
+
+	<% @messages.each do |m| %>
+        <tr> 
+          <th><%= m.lilyid%></th>
+          <td><%= m.stock_number%></td>
+          <td><%= m.stock_name%></td>
+          <td><%= m.nominate_reason%></td>
+          <td><%= m.price_nominate%></td>
+          <td>16.09</td>
+          <td>1.32%</td>
+	  <td>0.0%</td>
+        </tr>
+        <% end %>
+      
+    
+    </tbody>
+  </table>
+（*注：价格数据每5分钟更新一次）
+
+
+
+

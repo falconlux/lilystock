@@ -1,4 +1,8 @@
 Lilystock::Application.routes.draw do
+
+  resources :messages
+
+
   get "pages/home"
 
   get "pages/about"

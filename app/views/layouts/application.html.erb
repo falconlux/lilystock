@@ -1,14 +1,18 @@
 <!DOCTYPE html>
+<%# coding: utf-8 %>
 <html>
 <head>
   <title>Lilystock</title>
   <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag :defaults %>
+  <%= javascript_include_tag 'myjs' %>
   <%= csrf_meta_tag %>
 </head>
 <body>
 
 <%= yield %>
-
+<div id='foot'>
+	Powered By <a href='http://bbs.nju.edu.cn/vd29969/bbsqry?userid=3C'>3C</a> | <a href='#'>问题反馈</a> 
+ </div>
 </body>
 </html>

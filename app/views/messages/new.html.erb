@@ -1,0 +1,28 @@
+<div id="formwrapper">
+	<%= form_for(@message,:remote => true) do |f| %>
+	<fieldset>
+		<legend>我要报名</legend>
+		<p>每个人最多推荐一支股票</p>
+        <div class="notifier"></div>
+		<div>
+		<label for="author">百合ID</label>
+                <%= f.text_field :lilyid , :size => 12%>
+		（字母或数字的组合） <br />	
+		</div>
+		<div>
+		<label for="stock_number">股票代码</label>
+		<%= f.text_field :stock_number , :size => 12%>（如600001）<br />	
+		</div>	
+		<div>
+		<label for="reason">推荐理由</label>
+		<%= f.text_area :nominate_reason, :cols => 30, :rows => 6 %>
+
+		</div>		
+		<div class="enter">
+	           <%= f.submit "提交",:class=>"button"%>
+		</div>
+
+		<p></p>	
+	</fieldset>
+	<% end %>
+</div>
