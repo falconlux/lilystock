@@ -1,0 +1,136 @@
+body {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+	background-image:url(../images/back.gif);
+	background-repeat:repeat;
+}
+
+a {
+	color:#1E7ACE;
+	text-decoration:none;	
+}
+
+a:hover {
+	color:#000;
+	text-decoration:underline;
+}
+
+h2 {
+	font-size:20px;
+	font-weight:bold;
+}
+
+pre,p {
+	color:#1E7ACE;
+	margin:4px;
+}
+input, select,textarea {
+	padding:1px;
+	margin:2px;
+	font-size:12px;
+}
+.buttom{
+	padding:1px 10px;
+	font-size:12px;
+	border:1px #1E7ACE solid;
+	background:#D0F0FF;
+}
+
+#formwrapper {
+	width:400px;
+	margin:15px auto;
+	padding:20px;
+	text-align:left;
+	border:0px #1E7ACE solid;
+}
+
+fieldset {
+	padding:10px;
+	margin-top:5px;
+	border:1px solid #6CADD9;
+	background:#fff;
+}
+
+fieldset legend {
+	color:#1E7ACE;
+	font-weight:bold;
+	padding:3px 20px 3px 20px;
+	border:1px solid #6CADD9;	
+	background:#fff;
+}
+
+fieldset label {
+	float:left;
+	width:100px;
+	text-align:right;
+	padding:4px;
+	margin:1px;
+}
+
+fieldset div {
+	clear:left;
+	margin-bottom:2px;
+}
+
+.enter{ text-align:center;}
+
+.notifier{ 
+		text-align:center;
+		
+		color:red;
+		font-size:14px;
+		}
+
+.past{ 
+		text-align:center;
+		color:#1E7ACE;
+		font-size:14px;
+		}
+
+.clear {
+	clear:both;
+}
+
+table#dd {
+        background-color: #6CADD9;
+}
+
+table#dd thead th {
+		height: 20px;
+        background-color: #6CADD9;
+        color: #FFFFFF;
+}
+
+#dd td {
+        padding: 6px;
+        width: 70px;
+}
+
+table#dd tbody.tb td {
+        background-color: #F7F7F7;
+}
+
+table#dd tbody td:hover {
+        background-color: #BFEDF9;
+}
+
+table#dd colgroup col.name {
+		text-align:center;
+        background-color: #E6E6E6;
+        width: 100px;
+        font-weight: normal;
+}
+
+table#dd colgroup col.reason {
+        width: 200px;
+}
+
+#foot
+{
+	text-align:center;
+	padding-top:30px;
+	
+}
+
+
