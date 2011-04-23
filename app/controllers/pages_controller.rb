@@ -7,6 +7,7 @@ class PagesController < ApplicationController
   end
 
   def help
+     render :layout => false 
   end
 
 end

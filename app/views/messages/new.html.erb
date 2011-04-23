@@ -1,5 +1,6 @@
 <div id="formwrapper">
 	<%= form_for(@message,:remote => true) do |f| %>
+      <%= render 'shared/error_messages',:object => f.object %>
 	<fieldset>
 		<legend>我要报名</legend>
 		<p>每个人最多推荐一支股票</p>
@@ -19,7 +20,7 @@
 
 		</div>		
 		<div class="enter">
-	           <%= f.submit "提交",:class=>"button"%>
+          <%= f.submit "提交",:class=>"button",:id=>"new_m"%>
 		</div>
 
 		<p></p>	

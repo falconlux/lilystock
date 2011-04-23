@@ -3,7 +3,6 @@ class CreateMessages < ActiveRecord::Migration
     create_table :messages do |t|
       t.string :lilyid
       t.string :stock_number
-      t.string :stock_name
       t.text :nominate_reason
       t.string :price_nominate
 

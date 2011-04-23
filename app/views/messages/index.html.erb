@@ -28,15 +28,16 @@
     <tbody class="tb">
 
 	<% @messages.each do |m| %>
+      <% detail=  getdetail m.stock_number %>
         <tr> 
           <th><%= m.lilyid%></th>
           <td><%= m.stock_number%></td>
-          <td><%= m.stock_name%></td>
+          <td><%= detail[0] %></td>
           <td><%= m.nominate_reason%></td>
           <td><%= m.price_nominate%></td>
-          <td>16.09</td>
-          <td>1.32%</td>
-	  <td>0.0%</td>
+          <td><%= detail[1] %></td>
+          <td><%= detail[2] %></td>
+          <td><%= detail[1]-(m.price_nominate).to_f %></td>
         </tr>
         <% end %>
       
