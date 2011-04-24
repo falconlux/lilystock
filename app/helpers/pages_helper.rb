@@ -2,7 +2,9 @@
 require "open-uri"
 require "iconv"
 module PagesHelper
-
+  def theurl
+     theurl="http://hq.sinajs.cn/list=sh"+params[:stock_number].to_s;
+  end
   def isrightnum?(num)
     url="http://hq.sinajs.cn/list=sh"+num
     uri = URI.parse(url)

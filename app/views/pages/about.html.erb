@@ -1,2 +1,6 @@
-<h1>Pages#about</h1>
-<p>Find me in app/views/pages/about.html.erb</p>
+<% if(params[:stock_number])   %>
+  <%= isrightnum? @stock_number%>
+<% end %>
+<% if(params[:lilyid])   %>
+  <%= islilyuser? @lilyid %>
+<% end %>
